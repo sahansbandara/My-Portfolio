@@ -228,7 +228,7 @@ export default function Hero() {
 
               <a
                 href="/mycv.pdf"
-                download
+                download="Sithmi-Sasanka-CV.pdf"
                 className="group relative px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white rounded-full font-medium overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-white/5 flex items-center gap-2"
               >
                 <span className="relative z-10 flex items-center">

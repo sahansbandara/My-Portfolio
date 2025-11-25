@@ -8,7 +8,7 @@ const educationData = [
     id: 1,
     degree: "BSc (Hons) in Information Technology – Software Engineering",
     institution: "Sri Lanka Institute of Information Technology (SLIIT)",
-    period: "2023 – Present • Current GPA: 3.36",
+    period: "2023 – Present",
     description: "I am an undergraduate student at SLIIT specializing in Software Engineering. I am highly motivated to expand my skill set, embrace new challenges, and pursue industry opportunities that support my growth and career development. I have a strong passion for software development and continuously work on improving my technical and problem-solving skills.",
     icon: <FaGraduationCap className="text-2xl text-purple-400" />,
     logo: sliitLogo,
