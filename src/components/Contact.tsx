@@ -22,7 +22,7 @@ export default function Contact() {
     {
       icon: <FiMapPin className="text-2xl text-red-400" />,
       title: "Location",
-      value: "Beliatta, Hambantota, Sri Lanka"
+      value: "Malabe, Colombo"
     }
   ];
 
