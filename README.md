@@ -207,7 +207,7 @@ This will:
 3. Under **Source**, select the `gh-pages` branch
 4. Click **Save**
 
-Your site will be live at: `https://kavindi03.github.io/SithmiSasankaPortfolio/`
+Your site will be live at: `https://kavindi03.github.io/My-Portfolio/`
 
 ---
 
