@@ -9,6 +9,7 @@ import carRentalImg from "../assets/CarRental.png";
 import financeTrackerImg from "../assets/FinanceTracker.png";
 import myPortfolioImg from "../assets/MyPortfolio.png";
 
+
 interface Project {
   id: number;
   title: string;
@@ -22,59 +23,60 @@ export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Finance Tracker",
-      description: "A full-stack finance management application that helps users track income, expenses, saving goals, and monthly financial performance. Includes real-time charts, category-based analytics, and a secure backend API.",
-      tags: ["React", "Node.js", "Express", "MongoDB"],
-      image: financeTrackerImg,
-      githubUrl: "https://github.com/Sithmisasanka/Finance-Tracker"
-    },
-    {
-      id: 2,
-      title: "My Portfolio",
-      description: "A modern personal portfolio showcasing academic background, skills, certifications, and projects. Designed with a clean UI/UX, responsive layout, and optimized for performance and mobile viewing.",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-      image: myPortfolioImg,
-      githubUrl: "https://github.com/Sithmisasanka/My-Portfolio"
-    },
-    {
-      id: 3,
-      title: "Smart Healthcare System",
-      description: "A full-stack hospital management system designed to digitalize patient–doctor interactions. Includes secure multi-role access, appointment scheduling, medical record handling, and QR-based patient identification for faster processing.",
-      tags: ["Next.js", "MongoDB", "Tailwind CSS", "QR Code"],
-      image: healthcareImg,
-      githubUrl: "https://github.com/Sithmisasanka/Smart-Healthcare-System"
-    },
-    {
-      id: 4,
-      title: "AeroGuard – Air Quality Monitoring App",
-      description: "A mobile air-quality monitoring app that provides real-time pollution readings, exposure tracking, and health recommendations based on environmental data. Built with a focus on user clarity and mobile responsiveness.",
-      tags: ["React Native", "Firebase", "Arduino", "IoT Sensors"],
+      title: "AeroGuard – Smart Air Quality & Exposure Management App",
+      description: "A cross-platform mobile solution that provides real-time AQI tracking, cleaner route suggestions, personalized health alerts, and multilingual support. Built to help users reduce exposure and monitor respiratory risks with accurate global air-quality APIs.",
+      tags: ["React Native", "TypeScript", "Firebase", "Google Maps API", "IQAir API"],
       image: aeroguardImg,
       githubUrl: "https://github.com/Sithmisasanka/Aero-Guard-Mobile-App"
     },
     {
-      id: 5,
-      title: "BeatBox – Music Player App",
-      description: "An Android music player with playlist management, smooth navigation, and a modern UI. Designed to deliver an immersive audio experience with fast performance on mobile devices.",
-      tags: ["Kotlin", "Android Studio", "Firebase", "UI/UX"],
+      id: 2,
+      title: "BeatBox – Online Music Store System",
+      description: "A Java-based desktop music platform that allows users to browse, purchase, and listen to songs. Includes artist content management and admin tools, built using robust OOP principles and JDBC database connectivity.",
+      tags: ["Java", "JDBC", "MySQL", "OOP", "Desktop App"],
       image: beatboxImg,
       githubUrl: "https://github.com/Sithmisasanka/Beat-Box-Music-Store"
     },
     {
-      id: 6,
-      title: "Fuel Station Management System",
-      description: "A comprehensive management platform for fuel stations covering inventory tracking, sales monitoring, employee management, and reporting dashboards for efficient daily operations.",
-      tags: ["React", "Node.js", "Express", "MongoDB"],
+      id: 3,
+      title: "Smart Healthcare System – Full-Stack Hospital Management Platform",
+      description: "A complete hospital management system with secure roles, appointment scheduling, QR-based patient identification, digital records, and optimized workflows designed for modern urban hospitals.",
+      tags: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "JWT"],
+      image: healthcareImg,
+      githubUrl: "https://github.com/Sithmisasanka/Smart-Healthcare-System"
+    },
+
+    {
+      id: 5,
+      title: "Fuel Station – Financial & Operations Management System",
+      description: "A full-stack fuel-station platform that integrates sales tracking, inventory monitoring, employee handling, and financial dashboards to streamline daily business operations.",
+      tags: ["React", "Node.js", "Express.js", "MongoDB", "Material-UI"],
       image: fuelstationImg,
       githubUrl: "https://github.com/Sithmisasanka/Fuel-Station-Management-System"
     },
     {
+      id: 6,
+      title: "SpendSavvy – Personal Finance Tracker (Android App)",
+      description: "A lightweight, offline-first Android app that tracks income, expenses, and budgeting insights. Features category-based analytics, alerts, and persistent local storage using MVVM architecture.",
+      tags: ["Kotlin", "MVVM", "Android Studio", "XML", "Local Storage"],
+      image: financeTrackerImg,
+      githubUrl: "https://github.com/Sithmisasanka/Finance-Tracker"
+    },
+    {
       id: 7,
-      title: "Car Rental System",
-      description: "The Car Rental System streamlines the entire vehicle rental process. Users can explore available vehicles, check availability, and place bookings, while administrators can manage the fleet, update vehicle information, track customer data, and oversee rental operations. The system is designed for efficiency, clarity, and smooth interaction between customers and staff.",
-      tags: ["React", "Node.js", "MongoDB", "REST API"],
+      title: "Car Rental System – Web Application",
+      description: "A complete rental management system allowing users to browse vehicles, make bookings, track schedules, and manage accounts. Admins can monitor fleet data, customer feedback, and operational workflows.",
+      tags: ["PHP", "HTML5", "CSS", "JavaScript", "MySQL"],
       image: carRentalImg,
       githubUrl: "https://github.com/Sithmisasanka/Car-Rental-System"
+    },
+    {
+      id: 8,
+      title: "My Portfolio – Legacy HTML/JS Portfolio Site",
+      description: "A simple and responsive portfolio built with clean UI components showcasing projects, skills, and academic details. Designed for clarity, fast loading, and easy navigation.",
+      tags: ["HTML", "CSS", "JavaScript", "Responsive UI", "Portfolio Site"],
+      image: myPortfolioImg,
+      githubUrl: "https://github.com/Sithmisasanka"
     }
   ];
 
@@ -136,13 +138,13 @@ export default function Projects() {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-300 text-sm leading-relaxed mb-4 flex-grow line-clamp-3">
+                  <p className="text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
                     {project.description}
                   </p>
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.slice(0, 3).map((tag, tagIndex) => (
+                    {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
                         className="px-3 py-1 text-xs font-medium bg-purple-500/10 text-purple-300 rounded-full border border-purple-500/20"
@@ -150,11 +152,6 @@ export default function Projects() {
                         {tag}
                       </span>
                     ))}
-                    {project.tags.length > 3 && (
-                      <span className="px-3 py-1 text-xs font-medium bg-purple-500/10 text-purple-300 rounded-full border border-purple-500/20">
-                        +{project.tags.length - 3}
-                      </span>
-                    )}
                   </div>
 
                   {/* GitHub Button */}
