@@ -168,7 +168,11 @@ Follow the prompts to complete deployment.
 The `package.json` already includes the homepage configuration:
 
 ```json
+<<<<<<< HEAD
 "homepage": "https://YOUR_GITHUB_USERNAME.github.io/SithmiSasankaPortfolio/"
+=======
+"homepage": "https://SithmiSasanka.github.io/SithmiSasankaPortfolio/"
+>>>>>>> 3e4ce858ddd5d87677cbc512bc9b333f23454d4a
 ```
 
 Make sure this matches your GitHub username and repository name.
@@ -207,7 +211,11 @@ This will:
 3. Under **Source**, select the `gh-pages` branch
 4. Click **Save**
 
+<<<<<<< HEAD
 Your site will be live at: `https://YOUR_GITHUB_USERNAME.github.io/SithmiSasankaPortfolio/`
+=======
+Your site will be live at: `https://kavindi03.github.io/My-Portfolio/`
+>>>>>>> 3e4ce858ddd5d87677cbc512bc9b333f23454d4a
 
 ---
 
