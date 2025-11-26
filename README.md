@@ -169,9 +169,9 @@ The `package.json` already includes the homepage configuration:
 
 ```json
 <<<<<<< HEAD
-"homepage": "https://YOUR_GITHUB_USERNAME.github.io/SithmiSasankaPortfolio/"
+"homepage": "https://YOUR_GITHUB_USERNAME.github.io/My-Portfolio/"
 =======
-"homepage": "https://SithmiSasanka.github.io/SithmiSasankaPortfolio/"
+"homepage": "https://SithmiSasanka.github.io/My-Portfolio/"
 >>>>>>> 3e4ce858ddd5d87677cbc512bc9b333f23454d4a
 ```
 
@@ -212,7 +212,7 @@ This will:
 4. Click **Save**
 
 <<<<<<< HEAD
-Your site will be live at: `https://YOUR_GITHUB_USERNAME.github.io/SithmiSasankaPortfolio/`
+Your site will be live at: `https://YOUR_GITHUB_USERNAME.github.io/My-Portfolio/`
 =======
 Your site will be live at: `https://SithmiSasanka.github.io/My-Portfolio/`
 >>>>>>> 3e4ce858ddd5d87677cbc512bc9b333f23454d4a
