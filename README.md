@@ -206,7 +206,7 @@ This project is open source under the **MIT License**.
 
 - Portfolio: https://sithmi-sasanka.vercel.app/#  
 - GitHub: https://github.com/Sithmisasanka  
-- LinkedIn: https://linkedin.com/in/your-profile  
+- LinkedIn: [https://linkedin.com/in/your-profile  ](https://www.linkedin.com/in/sithmi-sasanka-964751256/)
 
 ---
 
